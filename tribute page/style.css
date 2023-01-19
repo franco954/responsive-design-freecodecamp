@@ -1,18 +1,37 @@
 
 
 
+#presentation, #tribute-info{
+
+
+    margin: 0 auto;
+    max-width: 80vw;
+
+
+}
+
+#title{
+
+text-align: center;
+
+
+}
+
+figcaption{
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
 #img-div{
+    text-align: center;
 
-
-    display: grid;
-    justify-content: center;
-    align-items: center;
     
 }
 
-#img{
-    margin: auto;
-    max-width: 800px;
-    max-height: 1000px;
-}
 
