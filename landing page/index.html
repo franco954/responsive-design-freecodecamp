@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+
+
+
+#nav-bar{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   background-color: #222;
+}
+
+#box-nav-links{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;                                       
+}
+
+
+#header-img{
+
+    width: 10%;
+    height: 100%;
+}
+
+
+#form{
+    display: grid;
+    gap: 1%;
+}
+
+#form > input{
+    padding:  4px;
+}
+
+#form  > h2 {
+    text-align: center;
+}
+
+
+
+#submit{
+    margin: 5% 0;
+}
+
+
+    @media (max-width: 600px) {
+        #products{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+        #video{
+            height: 100%;
+            width: auto;
+        }
+    }
+    </style>
+<body>
+    
+    <main>
+
+        <header id="header">
+            <nav id="nav-bar">
+                <img id="header-img" src="https://mir-s3-cdn-cf.behance.net/projects/404/8e6692141570489.Y3JvcCw4OTksNzAzLDYyLDUz.png" alt="img-header"/>
+
+                <div id="box-nav-links">
+                    <a href="#products" class="nav-link">
+                        Products
+                    </a>
+                    <a href="#pricing" class="nav-link">
+                        Pricing
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <section id="products">
+
+           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CiFCn6g4IiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+        <section id="pricing">
+            
+            <h2>Choose a plan</h2>
+            <ul>
+                <li>
+                    <p>
+                        Free
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus aut nam fugiat aperiam ducimus odit nulla placeat ipsam, assumenda dolorum alias iusto culpa labore tenetur impedit, earum maxime, at possimus!</p>
+
+                </li>
+                <li>
+                    <p>
+                        Medium
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus aut nam fugiat aperiam ducimus odit nulla placeat ipsam, assumenda dolorum alias iusto culpa labore tenetur impedit, earum maxime, at possimus!</p>
+
+                </li>
+                <li>
+                    <p>
+                        Premium
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus aut nam fugiat aperiam ducimus odit nulla placeat ipsam, assumenda dolorum alias iusto culpa labore tenetur impedit, earum maxime, at possimus!</p>
+
+                </li>
+            </ul>
+
+        </section>
+        <section id="contact">
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+                <h2>
+                    Contact us
+                </h2>
+
+                <label for="input-first-name">first name</label>
+                <input type="text" id="input-first-name" required>
+                <label for="input-last-name">Last name</label>
+                <input type="text" id="input-last-name" required>
+                <label for="input-email">Email account</label>
+                <input type="email" name="email" placeholder="Enter your email account" id="email" required>
+                <input type="submit" id="submit"/>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+</body>
+</html>
