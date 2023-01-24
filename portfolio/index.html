@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+
+    <style>
+
+        
+#navbar{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   background-color: rgb(163, 42, 42);
+}
+
+#projects {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+
+    #projects{
+        
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+}
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <nav id="navbar">
+
+                <ul>
+                    <li><a href="#welcome-section">About me</a></li>
+                    <li><a href="projects">My works</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="welcome-section">
+            <h1>Hi! Im Franco</h1>
+            <h2>Software Developer</h2>
+        </section>
+        <section id="projects">
+            <h2>
+                My projects
+            </h2>
+            <div class="project-tile">
+                <h3>
+                    project1
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt reiciendis hic vitae repellat,
+                    provident aspernatur culpa commodi porro architecto ullam fugiat ipsum blanditiis excepturi soluta
+                    nemo. Saepe sint cupiditate ex!
+                </p>
+                <a href="">More</a>
+            </div>
+            <div class="project-tile">
+                <h3>
+                    project2
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt reiciendis hic vitae repellat,
+                    provident aspernatur culpa commodi porro architecto ullam fugiat ipsum blanditiis excepturi soluta
+                    nemo. Saepe sint cupiditate ex!
+                </p>
+                <a href="">More</a>
+            </div>
+            <div class="project-tile">
+                <h3>
+                    project3
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt reiciendis hic vitae repellat,
+                    provident aspernatur culpa commodi porro architecto ullam fugiat ipsum blanditiis excepturi soluta
+                    nemo. Saepe sint cupiditate ex!
+                </p>
+                <a href="">More</a>
+            </div>
+
+        </section>
+        <section id="contact">
+            <h1>
+                Let's work together!
+            </h1>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/franco954">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/franco954/" id="profile-link" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugiat nulla assumenda voluptate ut
+                molestiae dicta modi provident neque odio. Modi natus incidunt aliquam aspernatur vitae fuga nihil harum
+                itaque!</p>
+        </footer>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
